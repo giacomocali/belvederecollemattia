@@ -1,0 +1,46 @@
+/* CAROUSEL */
+#carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(src/1.jpg);
+  background-size: cover;
+  filter: blur(3px);
+  z-index: -1;
+}
+.carousel-header {
+  font-size: clamp(150%, 2.7vw, 3vw);
+}
+.carousel-subtitle {
+  font-size: clamp(100%, 1.7vw, 2vw);
+}
+/* REVIEW ARTICLE */
+#review-article {
+  position: relative; /* TOGLIERE QUESTA RIGA PER ESTENDERE LO SFONDO ANCHE ALLA NAVBAR TOGLIENDO IL BIANCO E RENDENDOLA TRASPARENTE*/
+  color: white;
+  padding-bottom: 10vh;
+}
+.flowers-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(src/flowers.jpg);
+  background-size: cover;
+  filter: blur(3px);
+  z-index: -1;
+}
+.responsive-card {
+  width: 18rem;
+  margin-bottom: 20px;
+}

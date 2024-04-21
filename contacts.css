@@ -1,0 +1,9 @@
+.social-icons{
+    width: 4rem;
+}
+
+#contacts-section {
+    position: relative; /* TOGLIERE QUESTA RIGA PER ESTENDERE LO SFONDO ANCHE ALLA NAVBAR TOGLIENDO IL BIANCO E RENDENDOLA TRASPARENTE*/
+    color: white;
+    padding-bottom: 10vh;
+  }
