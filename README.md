@@ -2,11 +2,11 @@
 Un sito creato da me, Giacomo Calì, per il bed & breakfast di Belvedere Colle Mattia.
 Ho usato l'IDE Visual Studio Code, testando il sito con LiveServer.
 
-Linguaggi usati:
+### Linguaggi usati:
 - HTML
 - CSS
 - JavaScript
-Librerie usate:
+### Librerie usate:
 - Bootstrap
 - Fancybox (galleria)
 - AOS (Animate On Scroll)
@@ -15,11 +15,11 @@ Librerie usate:
 A website made by me, Giacomo Calì, for the Belvedere Colle Mattia bed & breakfast.
 I used Visual Studio Code as my IDE and tested the website with LiveServer.
 
-Languages used:
+### Languages used:
 - HTML
 - CSS
 - JavaScript
-Libraries used:
+### Libraries used:
 - Bootstrap
 - Fancybox (gallery)
 - AOS (Animate On Scroll)
