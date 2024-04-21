@@ -5,17 +5,9 @@
   height: 100%;
 }
 .carousel-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(src/1.jpg);
-  background-size: cover;
-  filter: blur(3px);
-  z-index: -1;
+  aspect-ratio: 16 / 9; 
+  filter:brightness(60%);
+  object-fit:cover;
 }
 .carousel-header {
   font-size: clamp(150%, 2.7vw, 3vw);
@@ -29,15 +21,15 @@
   color: white;
   padding-bottom: 10vh;
 }
-.flowers-background {
+.reviews-background {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(src/flowers.jpg);
+  background-image: url(src/home-page/DSC03998\ copia.jpg);
   background-size: cover;
-  filter: blur(3px);
+  filter: brightness(65%);
   z-index: -1;
 }
 .responsive-card {

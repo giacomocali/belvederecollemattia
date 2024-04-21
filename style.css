@@ -30,26 +30,24 @@ body{
 .nopad{padding:0;}
 .nomargin{padding:0;}
 
-.wood-background {
-  background-image: url("src/wood.jpg");
+.bg-container{
+  position: relative; /* TOGLIERE QUESTA RIGA PER ESTENDERE LO SFONDO ANCHE ALLA NAVBAR TOGLIENDO IL BIANCO E RENDENDOLA TRASPARENTE*/
+  color: white;
+}
+
+.big-background {
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background-image: url("src/contacts/DSC04028\ copia.jpg");
   background-size: cover;
+  filter:brightness(60%);
   background-position: center;
+  z-index: -1;
   /*filter: brightness(
     70%
     ); /* Adjust the brightness to make it slightly darker */
   /*filter: blur(2px); /* Add blur effect */
   /* opacity: 0.7; /* Adjust the opacity to make it slightly darker */
-  color: white;
-}
-#wood-background-dark{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(src/wood.jpg);
-  background-size: cover;
-  z-index: -1;
 }
 
 .main-line{
