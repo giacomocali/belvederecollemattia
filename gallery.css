@@ -1,0 +1,8 @@
+.category-button{
+    aspect-ratio: 1/1;
+    width: 30vw;
+    filter:blur(0px);
+}
+.category-button:hover{
+    filter:blur(10px);
+}
