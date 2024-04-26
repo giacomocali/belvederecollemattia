@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Belvedere Colle Mattia</title>
     <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css" />
-    
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="gallery.css" />
-
 
     <!-- FANCYBOX -->
     <!--
@@ -21,7 +20,10 @@
     -->
 
     <script src="node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="node_modules/@fancyapps/ui/dist/fancybox/fancybox.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fancyapps/ui/dist/fancybox/fancybox.css"
+    />
 
     <script src="gallery.js" defer></script>
   </head>
@@ -62,29 +64,36 @@
       <br />
 
       <nav aria-label="...">
-        <ul class="pagination pagination-lg justify-content-center">
-          <li class="page-item active" aria-current="page">
-            <div class="page-link">Esterni</div>
+        <ul class="pagination justify-content-center">
+          <li class="page-item active" id="outdoor">
+            <a class="page-link" onclick="showOutdoors()" href="#">Esterni</a>
           </li>
-          <li class="page-item" id="events"> <a class="page-link" onclick="showEvents()" href="">Eventi</a></li>
-          <li class="page-item" id="personal-rooms"> <a class="page-link" href="">Camere</a></li>
+          <li class="page-item" id="events">
+            <a class="page-link" onclick="showEvents()" href="#">Eventi</a>
+          </li>
+          <li class="page-item" id="personal-rooms">
+            <a class="page-link" onclick="showPersonalRooms()" href="#">Camere</a>
+          </li>
           <li class="page-item" id="event-rooms">
-            <a class="page-link" href="#">Sale per eventi</a>
+            <a class="page-link" onclick="showEventRooms()" href="#">Sale per eventi</a>
           </li>
         </ul>
       </nav>
       <br />
 
-      <section id="gallery-container" class="container text-center justify-content-around">
-        
-      </section>
-      <br> <br> <br> <br>
+      <section
+        id="gallery-container"
+        class="container text-center justify-content-around"
+      ></section>
+      <br />
+      <br />
+      <br />
+      <br />
     </article>
     <!---------           FOOTER              ---------->
     <footer class="default-footer">
       Via di Colle Mattia, 131 (RM), Italy +39 111 111 1111
     </footer>
-
 
     <script>
       Fancybox.bind('[data-fancybox="gallery"]', {
