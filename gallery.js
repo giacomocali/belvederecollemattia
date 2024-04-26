@@ -13,7 +13,7 @@ COME REALIZZARLO
 var galleryContainer = document.querySelector("#gallery-container");
 
 const threeColRow = `
-<div class="row" style="margin-bottom: 10vh;">
+<div class="row align-items-center" style="margin-bottom: 10vh;">
     <div class="col">
         <a href="src/gallery/n" data-fancybox="gallery">
             <img src="src/gallery/n" class="img-thumbnail" />
@@ -32,7 +32,7 @@ const threeColRow = `
 </div>
 `;
 const twoColRow = `
-<div class="row" style="margin-bottom: 10vh;">
+<div class="row align-items-center" style="margin-bottom: 10vh;">
     <div class="col">
         <a href="src/gallery/n" data-fancybox="gallery">
             <img src="src/gallery/n" class="img-thumbnail" />
@@ -46,7 +46,7 @@ const twoColRow = `
 </div>
 `;
 const oneColRow = `
-<div class="row" style="margin-bottom: 10vh;">
+<div class="row align-items-center" style="margin-bottom: 10vh;">
     <div class="col">
         <a href="src/gallery/n" data-fancybox="gallery">
             <img src="src/gallery/n" class="img-thumbnail" />

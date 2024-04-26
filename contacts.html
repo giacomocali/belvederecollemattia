@@ -40,11 +40,11 @@
       </li>
     </ul>
 
-    <section class="bg-container" id="contacts">
+    <section id="contacts-bg-container" id="contacts" style="padding-bottom: 50vh;">
       <div class="big-background"></div>
       <br />
       <div class="row">
-        <div class="col-6 p-5">
+        <div id="divider-left">
           <h3 class="salsa unselectable">
             🌻 Ecco tutti i modi con cui puoi contattarci! 🌻
           </h3>
@@ -85,18 +85,13 @@
           <br />
           <br />
           <br />
-          <br />
-          <br />
-          <br />
         </div>
 
 
-        <div class="col-6 p-3">
+        <div id="divider-right">
           <h5 class="unselectable">Ci trovi qui:</h5>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1767.3508263959916!2d12.724260566238957!3d41.84298277364363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f7f5279bc1139%3A0x81d8052360a0a67a!2sBelvedere%20Colle%20Mattia!5e0!3m2!1sit!2sit!4v1710617515218!5m2!1sit!2sit"
-            width="600"
-            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -148,33 +143,27 @@
     </div>
 
     <footer class="default-footer">
-      Via di Colle Mattia, 131 (RM), Italy +39 111 111 1111
+      Via di Colle Mattia, 131 (RM), 00132 Italy - (+39) 320 305 9981
     </footer>
 
     <script src="main.js"></script>
     <script src="custom-bootstrap/js/bootstrap.js"></script>
-    
-<!--
-  <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
--->
 
     <script>
-      // to whoever looks at this code, i know, it's terrible, i'm new to this
-      // copy functions
       document.getElementById("email").addEventListener("click", function () {
-        navigator.clipboard.writeText("sample@domain.com");
+        navigator.clipboard.writeText("belvederecollemattia@gmail.com");
         var modal = new bootstrap.Modal(document.getElementById("copyModal"));
         modal.show();
       });
 
       document.getElementById("phone").addEventListener("click", function () {
-        navigator.clipboard.writeText("123-456-7890");
+        navigator.clipboard.writeText("+39 320 305 9981");
         var modal = new bootstrap.Modal(document.getElementById("copyModal"));
         modal.show();
       });
 
       document.getElementById("address").addEventListener("click", function () {
-        navigator.clipboard.writeText("123 Street, City");
+        navigator.clipboard.writeText("Via di Colle Mattia 131 00132 Roma (RM)");
         var modal = new bootstrap.Modal(document.getElementById("copyModal"));
         modal.show();
       });

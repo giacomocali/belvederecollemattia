@@ -7,3 +7,5 @@ function scrollToReviews() {
     behavior: "smooth",
   });
 }
+
+

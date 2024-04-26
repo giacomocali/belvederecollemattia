@@ -1,7 +1,25 @@
-.social-icons{
-    width: 4rem;
+.social-icons {
+  width: 4rem;
 }
 
-#contacts{
-    padding-bottom: 21vh;
+#contacts {
+  padding-bottom: 21vh;
+}
+
+#contacts-bg-container {
+  position: relative; /* TOGLIERE QUESTA RIGA PER ESTENDERE LO SFONDO ANCHE ALLA NAVBAR TOGLIENDO IL BIANCO E RENDENDOLA TRASPARENTE*/
+  color: white;
+}
+
+@media(min-aspect-ratio: 16/9){
+    #divider-left, #divider-right{
+        width: 40%;
+        margin: 2vw;
+    }
+}
+@media(max-aspect-ratio: 12/9){
+    #divider-left, #divider-right{
+        width:100%;
+        margin: 2vw;
+    }
 }
