@@ -124,7 +124,7 @@ showOutdoors();
 
 // EVENTS ----------------------
 
-let eventsHtml = `${threeColRow} ${threeColRow}`;
+let eventsHtml = `${threeColRow} ${threeColRow} ${threeColRow} ${threeColRow}`;
 const eventsImages = [
   "src/gallery/eventi0.jpg",
   "src/gallery/eventi1.jpg",
@@ -132,6 +132,12 @@ const eventsImages = [
   "src/gallery/eventi3.jpg",
   "src/gallery/eventi4.jpg",
   "src/gallery/eventi5.jpg",
+  "src/gallery/eventi6.jpeg",
+  "src/gallery/eventi7.jpeg",
+  "src/gallery/eventi8.jpeg",
+  "src/gallery/eventi9.jpeg",
+  "src/gallery/eventi10.jpeg",
+  "src/gallery/eventi11.jpeg",
 ];
 
 function showEvents() {
