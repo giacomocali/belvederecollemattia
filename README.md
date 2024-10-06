@@ -1,25 +1,5 @@
-# Readme (IT)
-Un sito creato da me, Giacomo Calì, per il bed & breakfast di Belvedere Colle Mattia.
-Ho usato l'IDE Visual Studio Code, testando il sito con LiveServer.
+# Vue 3 + Vite
 
-### Linguaggi usati:
-- HTML
-- CSS
-- JavaScript
-### Librerie usate:
-- Bootstrap
-- Fancybox (galleria)
-- AOS (Animate On Scroll)
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-# Readme (EN)
-A website made by me, Giacomo Calì, for the Belvedere Colle Mattia bed & breakfast.
-I used Visual Studio Code as my IDE and tested the website with LiveServer.
-
-### Languages used:
-- HTML
-- CSS
-- JavaScript
-### Libraries used:
-- Bootstrap
-- Fancybox (gallery)
-- AOS (Animate On Scroll)
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).

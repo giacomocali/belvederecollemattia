@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    @apply bg-orange-100;
+}
+
+@font-face {
+    font-family: satisfy;
+    src: url(./fonts/Satisfy/Satisfy-Regular.ttf);
+}
+.satisfy{
+    font-family: satisfy;
+}
+@font-face {
+    font-family: opensans;
+    src: url(./fonts/OpenSans/OpenSans-Variable.ttf);
+}
+.opensans{font-family:opensans;}
