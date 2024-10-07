@@ -1,11 +1,11 @@
 <script setup>
 import Home from "./pages/Home.vue";
+import Gallery from "./pages/Gallery.vue";
 </script>
 
-<style scoped></style>
 
 <template>
-  <main class="opensans">
-    <Home />
+  <main class="inter">
+    <Home/>
   </main>
 </template>

@@ -2,19 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    @apply bg-orange-100;
+:root {
+  @apply bg-green-50;
+}
+
+::selection {
+  background: green;
+  color: white;
 }
 
 @font-face {
-    font-family: satisfy;
-    src: url(./fonts/Satisfy/Satisfy-Regular.ttf);
+  font-family: satisfy;
+  src: url(/fonts/Satisfy/Satisfy-Regular.ttf);
 }
-.satisfy{
-    font-family: satisfy;
+.satisfy {
+  font-family: satisfy;
 }
 @font-face {
-    font-family: opensans;
-    src: url(./fonts/OpenSans/OpenSans-Variable.ttf);
+  font-family: opensans;
+  src: url(/fonts/OpenSans/OpenSans-Variable.ttf);
 }
-.opensans{font-family:opensans;}
+.opensans {
+  font-family: opensans;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(/fonts/Inter/Inter-VariableFont.ttf);
+}
+.inter {
+  font-family: inter;
+}
+
+.social-bg {
+  background-image: url(/icons/circle2.png);
+  background-position: center;
+  background-size: 100%;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.review-bg {
+  background-image: url(/images/site-assets/leaves-blur.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-bg {
+  background-image: url(/images/image15.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

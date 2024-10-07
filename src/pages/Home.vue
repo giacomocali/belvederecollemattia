@@ -1,21 +1,30 @@
 <script setup>
 import HomeCarousel from '../components/HomeCarousel.vue';
-import Review from '../components/Review.vue';
-</script>
+import HomeReviews from '../components/HomeReviews.vue';
 
-<style></style>
+import { onMounted, onBeforeUnmount } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Use the Composition API's lifecycle hooks
+onMounted(() => {
+    // Initialize AOS
+    AOS.init({
+        duration: 1200, // Animation duration
+        once: true,     // Whether animation should happen only once
+    });
+});
+
+// Optional: Refresh AOS when your component gets updated
+onBeforeUnmount(() => {
+    AOS.refresh();
+});
+</script>
 
 <template>
     <Navbar />
     <HomeCarousel />
-    <!-- <section class="w-screen flex justify-center gap-2 items-center">
-        <img src="https://picsum.photos/800/500" class="rounded-3xl" alt="">
-        <h1 class="text-5xl"> Benvenuto nel sito di Belvedere Colle Mattia </h1>
-    </section> -->
-    <h1 class="text-center text-4xl my-10"> Ecco cosa dicono gli ospiti che sono stati da noi: </h1>
 
-    <div class="flex justify-center w-screen items-center">
-
-        <Review author="Vittorio Bianchi:" body="Bel luogo per rimettersi in pace con se stessi e gli altri. Non lontano di Via Casilina." link="https://maps.app.goo.gl/deEHG9zUKzY3j7fPA" />
-    </div>
+    <HomeReviews />
+    <Footer />
 </template>
