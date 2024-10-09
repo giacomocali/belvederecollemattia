@@ -15,6 +15,6 @@ defineProps({
 
         <p class="text-lg italic mb-8 text-wrap"> "{{ body }}" </p>
 
-        <a :href={link} target="_blank" class="bg-blue-600 hover:bg-blue-800 transition-colors text-white rounded-2xl p-4 shadow-lg shadow-blue-400"> Recensione </a>
+        <a :href={link} target="_blank" class="bg-blue-600 hover:bg-blue-800 hover:shadow-md transition-all text-white rounded-2xl p-4 shadow-lg shadow-blue-400"> Recensione </a>
     </div>
 </template>

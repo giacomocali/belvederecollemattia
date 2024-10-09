@@ -4,7 +4,7 @@ import Review from '../components/Review.vue';
 
 
 <template>
-    <div class="w-full py-16 review-bg ">
+    <div class="w-full py-16 review-bg relative border-t-white border-t-4">
         <h1 class="text-center text-white text-4xl mb-10"> Ecco cosa dicono gli ospiti che sono stati da noi: </h1>
 
         <div class="flex justify-center w-full items-center gap-10">

@@ -6,12 +6,12 @@ import { onMounted, onBeforeUnmount } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+window.scrollTo(0, 0);
 // Use the Composition API's lifecycle hooks
 onMounted(() => {
     // Initialize AOS
     AOS.init({
         duration: 1200, // Animation duration
-        once: true,     // Whether animation should happen only once
     });
 });
 
@@ -19,6 +19,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
     AOS.refresh();
 });
+
 </script>
 
 <template>

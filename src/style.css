@@ -59,3 +59,10 @@
   background-size: cover;
 
 }
+
+.loading-bg{
+  background-image: url("/icons/loading.gif");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: center;
+}

@@ -5,7 +5,7 @@
 
 
         <li class="glide__slide" data-aos="fade-up" data-aos-once="true">
-          <img src="/images/image13.webp" class="brightness-75" alt="Image 1" />
+          <img src="/images/image13.webp" class="brightness-75" alt="foto" />
 
           <div class="absolute z-10">
             <p class="text-center text-5xl font-semibold my-32" data-aos="fade-up">
@@ -13,14 +13,14 @@
             </p>
 
             <div class="flex justify-center items-center gap-5" data-aos="fade-up">
-              <a href="#" class="w-24 p-3 social-bg" target="_blank">
-                <img src="/icons/airbnb.png" alt="">
+              <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-24 p-3 social-bg" target="_blank">
+                <img src="/icons/airbnb.webp" alt="">
               </a>
-              <a href="#" class="w-24 p-3 social-bg" target="_blank">
-                <img src="/icons/instagram.png" alt="">
+              <a href="https://www.instagram.com/belvedere_collemattia/" class="w-24 p-3 social-bg" target="_blank">
+                <img src="/icons/instagram.webp" alt="">
               </a>
-              <a href="#" class="w-24 p-3 social-bg" target="_blank">
-                <img src="/icons/facebook.svg" alt="">
+              <a href="https://www.facebook.com/belvederecollemattia" class="w-24 p-3 social-bg" target="_blank">
+                <img src="/icons/facebook.webp" alt="">
               </a>
             </div>
 
@@ -29,7 +29,7 @@
         </li>
 
         <li class="glide__slide relative w-full h-full">
-          <img src="/images/image7.webp" class="brightness-75" alt="Image 2" />
+          <img src="/images/image7.webp" class="brightness-75" alt="foto" />
 
           <div class="absolute w-full h-full flex justify-center items-center flex-col z-10">
 
@@ -38,9 +38,10 @@
             </p>
 
             <div class="flex justify-center items-center gap-5 ">
-              <a href="#" class="bg-blue-600 hover:bg-blue-800 transition-colors px-4 py-2 rounded-3xl text-xl">
+              <RouterLink to="/contacts" class="bg-blue-600 hover:bg-blue-800 
+              transition-colors px-4 py-2 rounded-3xl text-xl">
                 Contatti
-              </a>
+              </RouterLink>
             </div>
 
           </div>
@@ -60,9 +61,9 @@
             </p>
 
             <div class="flex justify-center items-center gap-5 ">
-              <a href="#" class="bg-blue-600 hover:bg-blue-800 transition-colors px-4 py-2 rounded-3xl text-xl">
+              <RouterLink to="/gallery" class="bg-blue-600 hover:bg-blue-800 transition-colors px-4 py-2 rounded-3xl text-xl">
                 Galleria
-              </a>
+              </RouterLink>
             </div>
 
           </div>
@@ -77,6 +78,7 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router';
 import { onMounted, ref, nextTick } from 'vue';
 import Glide from '@glidejs/glide';
 

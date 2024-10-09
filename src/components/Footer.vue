@@ -13,16 +13,16 @@
 
             <div class="mr-10 flex justify-center items-center gap-5">
                                
-                <a href="airbnb.com/h/stanzebelvederecollemattia" class="w-16 p-3 social-bg" target="_blank">
-                    <img src="/icons/airbnb.png" alt="">
+                <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-16 p-3 social-bg" target="_blank">
+                    <img src="/icons/airbnb.webp" alt="">
                 </a> 
 
                  <a href="https://www.instagram.com/belvedere_collemattia/" class="w-16 p-3 social-bg" target="_blank">
-                    <img src="/icons/instagram.png" alt="">
+                    <img src="/icons/instagram.webp" alt="">
                 </a>
 
-                <a href="#" class="w-16 p-3 social-bg" target="_blank">
-                    <img src="/icons/facebook.svg" alt="">
+                <a href="https://www.facebook.com/belvederecollemattia" class="w-16 p-3 social-bg" target="_blank">
+                    <img src="/icons/facebook.webp" alt="">
                 </a>
             </div>
         </div>
