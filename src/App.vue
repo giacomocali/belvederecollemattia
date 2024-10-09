@@ -1,11 +1,12 @@
 <script setup>
-import Home from "./pages/Home.vue";
-import Gallery from "./pages/Gallery.vue";
+
+import { RouterView } from 'vue-router';
+
 </script>
 
 
 <template>
   <main class="inter">
-    <Home/>
+    <RouterView/>    
   </main>
 </template>

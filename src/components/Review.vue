@@ -13,7 +13,7 @@ defineProps({
             <img src="/icons/stars.png" class="w-40" alt="stelle recensioni">
         </div>
 
-        <p class="text-lg italic mb-8 text-wrap"> "{{ body }}"" </p>
+        <p class="text-lg italic mb-8 text-wrap"> "{{ body }}" </p>
 
         <a :href={link} target="_blank" class="bg-blue-600 hover:bg-blue-800 transition-colors text-white rounded-2xl p-4 shadow-lg shadow-blue-400"> Recensione </a>
     </div>

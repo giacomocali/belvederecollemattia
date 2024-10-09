@@ -14,6 +14,9 @@ importers:
       aos:
         specifier: ^2.3.4
         version: 2.3.4
+      spotlight.js:
+        specifier: ^0.7.8
+        version: 0.7.8
       vue:
         specifier: ^3.5.10
         version: 3.5.11
@@ -740,6 +743,9 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
+
+  spotlight.js@0.7.8:
+    resolution: {integrity: sha512-zq822gqhjaMHt31oZi4do211NwqBcxZ4u7Xtb+OEsbLrz37dcELhBCoQXFu/0sTiomqD6tm5g6tmqvE7S6h4ng==}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -1468,6 +1474,8 @@ snapshots:
   signal-exit@4.1.0: {}
 
   source-map-js@1.2.1: {}
+
+  spotlight.js@0.7.8: {}
 
   string-width@4.2.3:
     dependencies:
