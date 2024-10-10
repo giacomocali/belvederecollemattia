@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.2",
-    "aos": "^2.3.4",
+    "animejs": "^3.2.2",
     "clipboard": "^2.0.11",
     "lenis": "^1.1.13",
     "spotlight.js": "^0.7.8",

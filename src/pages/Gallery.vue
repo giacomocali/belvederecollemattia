@@ -11,8 +11,9 @@ const pictures = ref(sources[selectedCategory.value]);
 
 var esterni, eventi, camere, sale;
 
-onMounted(()=>{
-    assignButtons();    
+onMounted(() => {
+    assignButtons();
+
 });
 
 function assignButtons() {
@@ -61,6 +62,12 @@ function notActive(objs) {
     }
 }
 
+const showHint = ref(true);
+
+function toggleHint(){
+    showHint.value = !showHint.value;
+}
+
 </script>
 
 <template>
@@ -70,24 +77,34 @@ function notActive(objs) {
             <p class="text-center text-white text-5xl mb-3"> Galleria foto</p>
             <hr class="w-1/4 border-white border-2 mx-auto mb-6">
 
-            <div class="w-full flex justify-center items-center text-white pb-10">
+            <div class="w-full flex justify-center items-center text-white mb-5">
 
                 <button @click="setCategory('esterni')" id="esterni"
                     class="bg-green-500 shadow-lg shadow-green-300 px-3 p-2 rounded-l-3xl ">
                     Esterni
                 </button>
 
-                <button @click="setCategory('eventi')" id="eventi" class="bg-white px-3 p-2 text-green-500 shadow-green-300 ">
+                <button @click="setCategory('eventi')" id="eventi"
+                    class="bg-white px-3 p-2 text-green-500 shadow-green-300 ">
                     Eventi
                 </button>
 
-                <button @click="setCategory('camere')" id="camere" class="bg-white px-3 p-2 text-green-500 shadow-green-300 ">
+                <button @click="setCategory('camere')" id="camere"
+                    class="bg-white px-3 p-2 text-green-500 shadow-green-300 ">
                     Camere
                 </button>
 
-                <button @click="setCategory('sale')" id="sale" class="bg-white px-3 p-2 text-green-500 rounded-r-3xl shadow-green-300 ">
+                <button @click="setCategory('sale')" id="sale"
+                    class="bg-white px-3 p-2 text-green-500 rounded-r-3xl shadow-green-300 ">
                     Sale per eventi
                 </button>
+            </div>
+
+            <div v-if="showHint" class="text-center text-white mb-5"> 
+                Clicca sulle foto per ingrandirle 
+                <button @click="toggleHint" class="rounded-3xl text-green-300 bg-opacity-40 px-3 bg-white"> 
+                    Ok 
+                </button> 
             </div>
 
             <article class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mx-5 md:mx-10">

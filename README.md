@@ -4,6 +4,5 @@ Usato Vue.js come prova.
 Tutte le tecnologie usate:  
 + Vue.js
 + Vue Router
-+ AOS (Animate On Scroll)
 + Tailwind CSS
 + Glide.js per i caroselli

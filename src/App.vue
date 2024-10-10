@@ -1,8 +1,10 @@
 <script setup>
 
 import { RouterView } from 'vue-router';
+
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
+
 import { onMounted, onUnmounted } from 'vue';
 
 window.scrollTo(0, 0);
@@ -29,7 +31,7 @@ onUnmounted(()=>{
 
 
 <template>
-  <main class="inter">
+  <main class="inter overflow-x-hidden">
     <RouterView />
   </main>
 </template>

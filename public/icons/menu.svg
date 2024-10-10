@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="72" height="72">
+	<title>menu-svg</title>
+	<defs>
+		<image  width="48" height="42" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqAQMAAADPgUo5AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAAAIElEQVR4nGNkAAPG+gYg+Z/xP4RHBAXVANVOMjW07AMAbW8eDfMwaOkAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use  href="#img1" x="12" y="15"/>
+</svg>

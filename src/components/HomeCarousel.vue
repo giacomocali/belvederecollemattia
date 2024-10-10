@@ -1,25 +1,54 @@
+<script setup>
+import { RouterLink } from 'vue-router';
+import { onMounted, ref, nextTick } from 'vue';
+import Glide from '@glidejs/glide';
+
+const glide = ref(null);
+
+import anime from 'animejs';
+
+
+anime({
+  targets: '#slide1',
+  translateY: 250,
+});
+
+onMounted(() => {
+  nextTick(() => {
+    glide.value = new Glide('.glide', {
+      type: 'carousel',
+      autoplay: 4000,
+      perView: 1,
+      gap: 0,
+    });
+    glide.value.mount();
+  });
+});
+
+</script>
+
 <template>
   <div class="glide">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides text-white">
 
 
-        <li class="glide__slide" data-aos="fade-up" data-aos-once="true">
+        <li class="glide__slide" id="slide1" >
           <img src="/images/image13.webp" class="brightness-75" alt="foto" />
 
           <div class="absolute z-10">
-            <p class="text-center text-5xl font-semibold my-32" data-aos="fade-up">
+            <p class="text-center text-4xl md:text-5xl font-semibold my-20 md:my-32" >
               Benvenuto nel sito di Belvedere Colle Mattia
             </p>
 
-            <div class="flex justify-center items-center gap-5" data-aos="fade-up">
-              <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-24 p-3 social-bg" target="_blank">
+            <div class="flex justify-center items-center gap-5" >
+              <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-16 md:w-24 p-3 social-bg" target="_blank">
                 <img src="/icons/airbnb.webp" alt="">
               </a>
-              <a href="https://www.instagram.com/belvedere_collemattia/" class="w-24 p-3 social-bg" target="_blank">
+              <a href="https://www.instagram.com/belvedere_collemattia/" class="w-16 md:w-24 p-3 social-bg" target="_blank">
                 <img src="/icons/instagram.webp" alt="">
               </a>
-              <a href="https://www.facebook.com/belvederecollemattia" class="w-24 p-3 social-bg" target="_blank">
+              <a href="https://www.facebook.com/belvederecollemattia" class="w-16 md:w-24 p-3 social-bg" target="_blank">
                 <img src="/icons/facebook.webp" alt="">
               </a>
             </div>
@@ -33,12 +62,12 @@
 
           <div class="absolute w-full h-full flex justify-center items-center flex-col z-10">
 
-            <p class="text-center text-5xl font-semibold my-10">
+            <p class="text-center text-4xl md:text-5xl font-semibold my-10">
               Location per eventi, feste e pernottamento <br /> tra vigneti e ulivi sotto i Castelli Romani
             </p>
 
             <div class="flex justify-center items-center gap-5 ">
-              <RouterLink to="/contacts" class="bg-blue-600 hover:bg-blue-800 
+              <RouterLink to="/contacts" class="bg-green-600 hover:bg-green-700 
               transition-colors px-4 py-2 rounded-3xl text-xl">
                 Contatti
               </RouterLink>
@@ -54,14 +83,14 @@
 
           <div class="absolute w-full h-full flex justify-center items-center flex-col z-10">
 
-            <p class="text-center text-5xl font-semibold my-10" data-aos="fade-up">
+            <p class="text-center text-4xl md:text-5xl font-semibold my-10" >
 
               I nostri ospiti amano la location ❤️🌳
 
             </p>
 
             <div class="flex justify-center items-center gap-5 ">
-              <RouterLink to="/gallery" class="bg-blue-600 hover:bg-blue-800 transition-colors px-4 py-2 rounded-3xl text-xl">
+              <RouterLink to="/gallery" class="bg-green-600 hover:bg-green-700 transition-colors px-4 py-2 rounded-3xl text-xl">
                 Galleria
               </RouterLink>
             </div>
@@ -70,33 +99,26 @@
         </li>
       </ul>
     </div>
+
+
     <div class="glide__arrows" data-glide-el="controls">
-      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> ‹ </button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
     </div>
+
+
+    <!-- <div class="slide-lines">
+      <div
+        v-for="(line, index) in totalSlides"
+        :key="index"
+        :class="['line', { active: index === activeSlide }]"
+      ></div>
+    </div> -->
+
+
   </div>
 </template>
 
-<script setup>
-import { RouterLink } from 'vue-router';
-import { onMounted, ref, nextTick } from 'vue';
-import Glide from '@glidejs/glide';
-
-const glide = ref(null);
-
-onMounted(() => {
-  nextTick(() => {
-    glide.value = new Glide('.glide', {
-      type: 'carousel',
-      autoplay: 3000,
-      hoverpause: true,
-      perView: 1,
-      gap: 0,
-    });
-    glide.value.mount();
-  });
-});
-</script>
 
 <style scoped>
 .glide {

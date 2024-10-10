@@ -3,22 +3,8 @@ import HomeCarousel from '../components/HomeCarousel.vue';
 import HomeReviews from '../components/HomeReviews.vue';
 
 import { onMounted, onBeforeUnmount } from 'vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 window.scrollTo(0, 0);
-// Use the Composition API's lifecycle hooks
-onMounted(() => {
-    // Initialize AOS
-    AOS.init({
-        duration: 1200, // Animation duration
-    });
-});
-
-// Optional: Refresh AOS when your component gets updated
-onBeforeUnmount(() => {
-    AOS.refresh();
-});
 
 </script>
 

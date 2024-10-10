@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen bg-neutral-900 text-white p-10">
-        <div class="w-full flex justify-between items-center">
-            <div class="ml-10">
+        <div class="w-full flex flex-wrap justify-center md:justify-between items-center">
+            <div class="mb-8 md:m-0 md:ml-10">
                 <h4 class="satisfy text-2xl mb-1"> Belvedere Colle Mattia </h4>
                 <p class="text-sm">
                     Creato con 💙 da
@@ -11,7 +11,7 @@
                 </p>
             </div>
 
-            <div class="mr-10 flex justify-center items-center gap-5">
+            <div class="md:mr-10 flex justify-center items-center gap-5">
                                
                 <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-16 p-3 social-bg" target="_blank">
                     <img src="/icons/airbnb.webp" alt="">
