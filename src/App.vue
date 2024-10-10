@@ -5,9 +5,7 @@ import { RouterView } from 'vue-router';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 
-import { onMounted, onUnmounted } from 'vue';
-
-window.scrollTo(0, 0);
+import { onBeforeUnmount, onMounted, onUnmounted } from 'vue';
 
 let lenis;
 onMounted(() => {
@@ -23,7 +21,7 @@ onMounted(() => {
   requestAnimationFrame(animate);
 })
 
-onUnmounted(()=>{
+onBeforeUnmount(()=>{
   if(lenis){lenis.destroy();}
 })
 

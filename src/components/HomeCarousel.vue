@@ -4,16 +4,24 @@ import { onMounted, ref, nextTick } from 'vue';
 import Glide from '@glidejs/glide';
 
 const glide = ref(null);
+const activeSlide = ref(0);
+const totalSlides = ref(3);
 
 import anime from 'animejs';
 
-
-anime({
-  targets: '#slide1',
-  translateY: 250,
-});
-
 onMounted(() => {
+  anime({
+    targets: '#slide1',
+    translateY: ['20%', '0%'],
+    easing: 'easeOutCubic',
+  });
+  anime({
+    targets: '#content1',
+    translateY: ['30%', '0%'],
+    opacity: [0, 1],
+    easing: 'easeOutCubic',
+  });
+
   nextTick(() => {
     glide.value = new Glide('.glide', {
       type: 'carousel',
@@ -21,9 +29,19 @@ onMounted(() => {
       perView: 1,
       gap: 0,
     });
+
+    // Listen for slide change events
+    glide.value.on('run', () => {
+      activeSlide.value = glide.value.index;  // Update the active slide
+    });
+
     glide.value.mount();
+
+    // Update total slides dynamically (if needed)
+    totalSlides.value = document.querySelectorAll('.glide__slide').length;
   });
 });
+
 
 </script>
 
@@ -33,22 +51,26 @@ onMounted(() => {
       <ul class="glide__slides text-white">
 
 
-        <li class="glide__slide" id="slide1" >
+        <li class="glide__slide" id="slide1">
           <img src="/images/image13.webp" class="brightness-75" alt="foto" />
 
-          <div class="absolute z-10">
-            <p class="text-center text-4xl md:text-5xl font-semibold my-20 md:my-32" >
+          <div class="absolute z-10" id="content1">
+
+            <p class="text-center text-4xl md:text-5xl font-semibold my-20 md:my-32">
               Benvenuto nel sito di Belvedere Colle Mattia
             </p>
 
-            <div class="flex justify-center items-center gap-5" >
-              <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-16 md:w-24 p-3 social-bg" target="_blank">
+            <div class="flex justify-center items-center gap-5" id="links1">
+              <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-16 md:w-24 p-3 social-bg"
+                target="_blank">
                 <img src="/icons/airbnb.webp" alt="">
               </a>
-              <a href="https://www.instagram.com/belvedere_collemattia/" class="w-16 md:w-24 p-3 social-bg" target="_blank">
+              <a href="https://www.instagram.com/belvedere_collemattia/" class="w-16 md:w-24 p-3 social-bg"
+                target="_blank">
                 <img src="/icons/instagram.webp" alt="">
               </a>
-              <a href="https://www.facebook.com/belvederecollemattia" class="w-16 md:w-24 p-3 social-bg" target="_blank">
+              <a href="https://www.facebook.com/belvederecollemattia" class="w-16 md:w-24 p-3 social-bg"
+                target="_blank">
                 <img src="/icons/facebook.webp" alt="">
               </a>
             </div>
@@ -77,20 +99,21 @@ onMounted(() => {
 
         </li>
 
-        
+
         <li class="glide__slide">
           <img src="/images/image9.webp" class="brightness-75" alt="Immagine 3" />
 
           <div class="absolute w-full h-full flex justify-center items-center flex-col z-10">
 
-            <p class="text-center text-4xl md:text-5xl font-semibold my-10" >
+            <p class="text-center text-4xl md:text-5xl font-semibold my-10">
 
               I nostri ospiti amano la location ❤️🌳
 
             </p>
 
             <div class="flex justify-center items-center gap-5 ">
-              <RouterLink to="/gallery" class="bg-green-600 hover:bg-green-700 transition-colors px-4 py-2 rounded-3xl text-xl">
+              <RouterLink to="/gallery"
+                class="bg-green-600 hover:bg-green-700 transition-colors px-4 py-2 rounded-3xl text-xl">
                 Galleria
               </RouterLink>
             </div>
@@ -107,13 +130,13 @@ onMounted(() => {
     </div>
 
 
-    <!-- <div class="slide-lines">
+    <div class="slide-lines">
       <div
         v-for="(line, index) in totalSlides"
         :key="index"
         :class="['line', { active: index === activeSlide }]"
       ></div>
-    </div> -->
+    </div>
 
 
   </div>
@@ -121,6 +144,26 @@ onMounted(() => {
 
 
 <style scoped>
+.slide-lines {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.line.active {
+  background-color: #333;  /* Highlight the active line */
+}
+
 .glide {
   height: 100vh;
   overflow: hidden;

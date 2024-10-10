@@ -52,16 +52,30 @@ function closeDrawer() {
             <img src="/icons/menu.svg" class="w-10" alt="menu">
         </button>
 
-        <div ref="drawer" class="fixed md:hidden 
+        <div ref="drawer" class="fixed md:hidden rounded-l-3xl
             top-0 right-0 w-72 bg-green-950 text-white 
             h-full z-50 translate-x-full
             flex flex-col items-end text-right px-10 py-16">
 
-            <button @click="toggleDrawer"> <img src="/icons/close.svg" class="w-14" alt="chiudi"> </button>
+            <button @click="toggleDrawer"> <img src="/icons/close.svg" class="w-12 mb-10" alt="chiudi"> </button>
 
-            <RouterLink to="/" class="text-5xl my-2"> Home </RouterLink>
-            <RouterLink to="/gallery" class="text-5xl my-2"> Galleria </RouterLink>
-            <RouterLink to="/contacts" class="text-5xl my-2 "> Contatti </RouterLink>
+            <RouterLink to="/" class="text-5xl my-2 flex">
+                <img src="/icons/home.svg" class="w-10 mr-3" alt="home">
+                Home
+            </RouterLink>
+
+            <RouterLink to="/gallery" class="text-5xl my-2 flex"> 
+                <img src="/icons/gallery.png" class="w-10 mr-2" alt="galleria">
+                Galleria 
+            </RouterLink>
+
+            <RouterLink to="/contacts" class="text-5xl my-2 flex"> 
+                <img src="/icons/share2.svg" class="w-8 mr-2" alt="contatti">
+                Contatti 
+            </RouterLink>
+
+            <img src="/icons/leaves.png" class="w-24 m-4 absolute right-0 bottom-0" alt="">
+
         </div>
     </nav>
 </template>
