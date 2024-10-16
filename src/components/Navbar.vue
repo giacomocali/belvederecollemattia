@@ -2,11 +2,12 @@
 import NavbarLink from "./NavbarLink.vue";
 import { RouterLink } from "vue-router";
 
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import anime from "animejs";
 
 const isDrawerOpen = ref(false);
 const drawer = ref(null);
+
 
 function toggleDrawer() {
     if (!isDrawerOpen.value) {
@@ -35,12 +36,30 @@ function closeDrawer() {
     });
 }
 
+
+var navbar;
+
+onMounted(()=>{
+    navbar = document.querySelector('nav');
+})
+
+onscroll = (event) => {
+    if(navbar != null && navbar != undefined){        
+        if(window.scrollY > 80){
+            navbar.classList.add("bg-neutral-900", "backdrop-blur");
+        }
+        else if(window.scrollY < 80){
+            navbar.classList.remove("bg-neutral-900", "backdrop-blur");
+        }
+    }
+};
+
 </script>
 
 <style></style>
 
 <template>
-    <nav class="z-40 w-screen fixed flex md:justify-center items-center text-white gap-10 p-10 text-xl">
+    <nav class="z-40 w-screen fixed flex md:justify-center items-center text-white gap-10 p-8 text-xl bg-opacity-75">
         <RouterLink to="/" class="satisfy text-2xl"> Belvedere Colle Mattia </RouterLink>
         <div class="hidden md:flex gap-2">
             <NavbarLink label="Home" link="/" />

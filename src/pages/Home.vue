@@ -11,7 +11,7 @@ window.scrollTo(0, 0);
 <template>
     <Navbar />
     <HomeCarousel />
-
     <HomeReviews />
+
     <Footer />
 </template>

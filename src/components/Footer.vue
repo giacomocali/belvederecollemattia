@@ -14,16 +14,17 @@
             <div class="md:mr-10 flex justify-center items-center gap-5">
                                
                 <a href="https://www.airbnb.com/h/stanzebelvederecollemattia" class="w-16 p-3 social-bg" target="_blank">
-                    <img src="/icons/airbnb.webp" alt="">
+                    <img src="/icons/airbnb.webp" alt="airbnb">
                 </a> 
 
                  <a href="https://www.instagram.com/belvedere_collemattia/" class="w-16 p-3 social-bg" target="_blank">
-                    <img src="/icons/instagram.webp" alt="">
+                    <img src="/icons/instagram.webp" alt="instagram">
                 </a>
 
                 <a href="https://www.facebook.com/belvederecollemattia" class="w-16 p-3 social-bg" target="_blank">
-                    <img src="/icons/facebook.webp" alt="">
+                    <img src="/icons/facebook.webp" alt="facebook">
                 </a>
+
             </div>
         </div>
     </div>

@@ -80,22 +80,22 @@ function toggleHint(){
             <div class="w-full flex justify-center items-center text-white mb-5">
 
                 <button @click="setCategory('esterni')" id="esterni"
-                    class="bg-green-500 shadow-lg shadow-green-300 px-3 p-2 rounded-l-3xl ">
+                    class="bg-green-500 shadow-lg shadow-black px-3 p-2 rounded-l-3xl ">
                     Esterni
                 </button>
 
                 <button @click="setCategory('eventi')" id="eventi"
-                    class="bg-white px-3 p-2 text-green-500 shadow-green-300 ">
+                    class="bg-white px-3 p-2 text-green-500 shadow-black ">
                     Eventi
                 </button>
 
                 <button @click="setCategory('camere')" id="camere"
-                    class="bg-white px-3 p-2 text-green-500 shadow-green-300 ">
+                    class="bg-white px-3 p-2 text-green-500 shadow-black ">
                     Camere
                 </button>
 
                 <button @click="setCategory('sale')" id="sale"
-                    class="bg-white px-3 p-2 text-green-500 rounded-r-3xl shadow-green-300 ">
+                    class="bg-white px-3 p-2 text-green-500 rounded-r-3xl shadow-black ">
                     Sale per eventi
                 </button>
             </div>
@@ -107,10 +107,10 @@ function toggleHint(){
                 </button> 
             </div>
 
-            <article class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mx-5 md:mx-10">
+            <article class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mx-5 pb-20 md:mx-10">
                 <div v-for="(image, index) in pictures" :key="index">
                     <a class="spotlight" :href="image" data-title="false">
-                        <img :src="image" alt="foto" class="w-fit border-white border-2 rounded-3xl">
+                        <img :src="image" alt="foto" class="w-fit rounded-3xl">
                     </a>
                 </div>
             </article>

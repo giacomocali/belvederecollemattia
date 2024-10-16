@@ -29,7 +29,7 @@ onBeforeUnmount(()=>{
 
 
 <template>
-  <main class="inter overflow-x-hidden">
+  <main class="arima overflow-x-hidden">
     <RouterView />
   </main>
 </template>

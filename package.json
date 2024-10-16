@@ -13,6 +13,7 @@
     "animejs": "^3.2.2",
     "clipboard": "^2.0.11",
     "lenis": "^1.1.13",
+    "siema": "^1.5.1",
     "spotlight.js": "^0.7.8",
     "vue": "^3.5.10",
     "vue-router": "^4.4.5"

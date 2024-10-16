@@ -11,57 +11,31 @@
   color: white;
 }
 
-
-html.lenis, html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
-}
-
-
- 
-
 @font-face {
   font-family: satisfy;
-  src: url(/fonts/Satisfy/Satisfy-Regular.ttf);
+  src: url("/fonts/Satisfy/Satisfy-Regular.ttf");
 }
 .satisfy {
   font-family: satisfy;
 }
-@font-face {
-  font-family: opensans;
-  src: url(/fonts/OpenSans/OpenSans-Variable.ttf);
-}
-.opensans {
-  font-family: opensans;
-}
 
 @font-face {
-  font-family: inter;
-  src: url(/fonts/Inter/Inter-VariableFont.ttf);
+  font-family: arima;
+  src: url("/fonts/Arima/Arima-VariableFont.ttf");
 }
-.inter {
-  font-family: inter;
+.arima{
+  font-family: arima;
 }
 
 .social-bg {
   background-image: url(/icons/circle2.png);
   background-position: center;
-  background-size: 100%;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.brightness-60{
+  filter: brightness(0.6);
 }
 
 .absolute-center {
@@ -90,3 +64,29 @@ html.lenis, html.lenis body {
   background-size: 15%;
   background-position: center;
 }
+
+.bg-slide0{
+  background-image: url("/images/bg27.webp");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-slide1{
+  background-image: url("/images/bg7.webp");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bg-slide2{
+  background-image: url("/images/bg8.webp"); /* previously bg9.webp */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
