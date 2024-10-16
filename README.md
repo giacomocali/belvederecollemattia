@@ -5,4 +5,6 @@ Tutte le tecnologie usate:
 + Vue.js
 + Vue Router
 + Tailwind CSS
-+ Glide.js per i caroselli
++ Anime.js (animazioni)
++ Lenis (smooth scrolling)
++ Siema (caroselli)
